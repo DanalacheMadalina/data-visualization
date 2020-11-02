@@ -1,0 +1,198 @@
+body{
+    margin:0px;
+    }
+    table, th, td {
+       border: 1px solid black;
+    }
+    th{
+       background-color: #ffccff;
+    }
+    table {
+        border-collapse: collapse;
+        width:250px;
+      padding-top:20px;
+       margin:auto;
+    }
+    .container {
+        padding-top:20px;
+        width: 1200px;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .column-canvas {
+        width: 700px;
+        height: 400px;
+        position: relative;
+        float: left;
+    }
+
+    .column-table {
+        width: 460px;
+        float: right;
+    }
+
+    canvas {
+        display: block;
+        margin: auto;
+        border-left: 2px solid black;
+        border-bottom:2px solid black;
+    }
+
+    .year {
+        margin: 20px 10px;
+    }
+
+    .xLabel > span {
+        margin-right: 55px;
+    }
+
+    .yLabel {
+        position: absolute;
+        left: -39px;
+        text-align: right;
+        top: 29px;
+    }
+    
+
+    .yLabel > span {
+        margin-bottom: 32px;
+        display: block;
+    }
+
+    .controls {
+        width: 110px;
+        margin: 50px auto 0;
+    }
+
+    .tooltip {
+        display: none;
+        position: absolute;
+        background-color: white;
+        margin: 0;
+        padding: 5px;
+    }
+
+    .tooltip > p {
+        margin: 0;
+    }
+    .yAxis{
+        margin-left:-96px;
+        position: absolute;
+        width:6px;
+        word-break:break-all;
+        top:115px;
+        display: block;
+      
+    }
+    .yAxis> p{
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        font-size: 20px;
+        margin-top: 30px;
+     }
+        
+     .xAxis{
+        margin-top: -50px;
+        width:200px;
+        align-content: center;
+        margin-top: -20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .xAxis> p{
+        font-size: 20px;
+        margin-left:35px;
+     }
+
+     .topBar{
+        text-align: center;
+        display: block;
+        background-color: #ffccff;
+    }
+    .topBar>p{
+        font-family: "Georgia";
+        font-size: 30px;
+        text-shadow: 1px 2px white;
+        margin:0px;
+        height:25px;
+        padding-top:20px;
+    }
+    .circle span
+    {
+        width:30px;
+        height:30px;
+        position: fixed;
+        bottom:-50px;
+        background: #cc0066;
+        border-radius: 50%;
+        animation: animate 5s linear infinite;
+        opacity: 0.7;
+    }
+    .circle span:nth-child(2)
+    { left:0%;
+        animation-delay:1.2s;
+        background-color: #cc00cc;
+    }
+    .circle span:nth-child(3)
+    { left:10%;
+        animation-delay:2s;
+        background-color: #ffff00;
+    }
+    .circle span:nth-child(4)
+    { left:20%;
+        animation-delay:1.5s;
+        background-color: #ff3300;
+    }
+    .circle span:nth-child(5)
+    { left:60%;
+        animation-delay:0.8s;
+        background-color: #0066ff;
+    }
+    .circle span:nth-child(6)
+    { left:80%;
+        animation-delay:0.4s;
+        background-color: #6600ff;
+    }
+    .circle span:nth-child(7)
+    { left:90%;
+        animation-delay:1.4s;
+        background-color: #660066;
+    }
+    .circle span:nth-child(8)
+    { left:55%;
+        animation-delay:2s;
+        background-color: #ff66ff;
+    }
+    @keyframes animate{ 
+        0% {
+            bottom:0;
+            margin-left: 50px;
+            margin-right: 25px;
+        }
+        10% {
+            bottom:10%;
+            margin-left: 70px;
+            margin-right: 22px;
+        }
+        20%{
+            bottom:15%;
+            margin-left: 90px;
+            margin-right: 40px;
+           
+        }
+        30%{
+            bottom:20%;
+            margin-left: 40px;
+            margin-right: 50px;  
+        }
+    }
+    .js-animation {
+        background-color: #ffccff; 
+        width: 110px;
+
+    }
+    .js-prev,
+    .js-next {
+        background-color: #ffccff;
+    }

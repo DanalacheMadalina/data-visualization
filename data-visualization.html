@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <link rel="stylesheet" href="data-visualization.css">
+    </head>
+   
+    <body>
+        <div class="topBar"><p> Time Series View</p>
+        <p style="font-size:15px ">Danalache Madalina Florina</p></div>
+        <section class="container">
+            <div class="columns">
+                <div class="column column-canvas">
+                    <div class="yAxis"> <p >FoodSupply</p></div>
+                    <div class="js-y-label yLabel">  </div>
+                    <div class="js-tooltip tooltip"> 
+                        <p class="js-life"></p>
+                        <p class="js-food"></p>
+                        <p class="js-income"></p>
+                    </div>
+                    <canvas width="700" height="400"></canvas>
+                    
+                    <div class="js-x-label xLabel"></div>
+                    <div class="xAxis"> <p >Life expectancy</p></div>
+                    <div class="controls">
+                        <button class="js-prev"><</button>
+                        <span class="js-year year">2000</span>
+                        <button class="js-next">></button>
+                        <button class="js-animation" > Start Animatie </button>
+                        
+                    </div>
+                </div>
+                <div class="column column-table">
+                    <p>Selecteaza anul pentru informatii suplimentare</p>
+                    <select class="js-select" onchange="changeValuesTable()">
+
+                    </select>
+                    <table class="js-table table">
+                        <tr>
+                            <th>Country</th>
+                            <th>Life</th>
+                            <th>Food</th>
+                            <th>Income</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- /bubble animation -->
+            <div class="circle">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+        </section>
+    </body>
+    <script type="text/javascript" src="./data-visualization.js"></script>
+</html>
