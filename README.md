@@ -1,5 +1,8 @@
 <h1 align="center">Data Visualization Project</h1>
-<img src="/images/preview.jpg" height="350" >
+
+<p align="center">
+<img src="images/preview.jpg" height="370" >
+</p>
 <h3>Description</h3>
 
 Graphic display of a time series using the canvas element.
@@ -13,3 +16,5 @@ The data within the application is stored in JSON format and data show the influ
 <li>Display the data in detailed format by simply clicking on the corresponding circle.</li>
 <li>Creating a user-friendly design</li>
 </ol>
+
+<h3 align="center"><a href="https://danalachemadalina.github.io/data-visualization/data-visualization.html" >You can see a live version of this project here.</a></h3>
